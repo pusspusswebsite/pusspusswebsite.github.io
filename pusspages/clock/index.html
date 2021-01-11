@@ -1,0 +1,25 @@
+<HTML>
+<HEAD>
+<title>Normal PussPuss</title>
+<script src="https://3EGaming.github.io/files/js/timedate_autorefresh.js"></script>
+<script src="https://3EGaming.github.io/files/js/digitcount.js"></script>
+</HEAD>
+<BODY>
+
+<iframe src="https://pusspusswebsite.github.io/files/html/header1.html" frameborder="0" height="105" width="100%"></iframe>
+
+<div id="clockcontent"></div>
+<script>
+var updateclock = function()
+{
+if (digitCountInt(MINUTE) == 1 || MINUTE == 0) { var Mspacing = "0"; } else { var Mspacing = ""; };
+if (digitCountInt(HOUR) == 1  || HOUR == 0) { var Hspacing = "0"; } else { var Hspacing = ""; };
+if (digitCountInt(SECOND) == 1  || SECOND == 0) { var Sspacing = "0"; } else { var Sspacing = ""; };
+document.getElementById("clockcontent").innerHTML = "<H1>" + Hspacing + HOUR + ":" + Mspacing + MINUTE + ":" + Sspacing + SECOND + "</H1>";
+setTimeout(updateclock, 1000);
+}
+updateclock();
+</script>
+
+</BODY>
+</HTML>
