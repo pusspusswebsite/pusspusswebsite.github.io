@@ -1,12 +1,13 @@
 var LoginD = function()
 {
-    //document.getElementById("PWHL").innerHTML = "<script type=\"text/javascript\" src=\"http://3egaming.000webhostapp.com/coco.website.api/pusspuss/login/USERJ/" + window.UHC + ".js\"></script>";
+    document.getElementById("PWHL").innerHTML = "";
     $.getScript("http://3egaming.000webhostapp.com/coco.website.api/pusspuss/login/USERJ/" + window.UHC + ".js");
-    if (UNHCX == hashCode(document.getElementById("PWT").value))
+    if (window.UNHCX == hashCode(document.getElementById("PWT").value))
     {
         console.log("Successfull Login.");
     } else {
         console.log("Error");
+        document.getElementById("PWHL").innerHTML = "<H3>Username or Password incorrect.</H3>";
     }
 }
 
