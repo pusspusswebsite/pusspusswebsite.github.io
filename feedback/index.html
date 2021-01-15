@@ -1,12 +1,16 @@
 <html>
 <head>
 <title>PussPuss Feedback</title>
+<script src="https://3EGaming.github.io/files/js/cookie.js"></script>
 <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
 </head>
 <body>
 <iframe src="https://pusspusswebsite.github.io/files/html/header1.html" frameborder="0" height="105" width="100%"></iframe>
 <H3>Comments are public.</H3>
 <H2>Please note that soon all comments currantly posted will be removed and you will need to create an account to comment.</H2>
-<iframe src="http://3egaming.000webhostapp.com/coco.website.api/pusspuss/pusspussfeedback/viewcomments.html" height="85%" width="100%" frameborder="0"></iframe>                    
+<div id="commentsection"></div>
+<script>
+    document.getElementById("commentsection").innerHTML = "<iframe src=\"http://3egaming.000webhostapp.com/coco.website.api/pusspuss/feedbacknew/viewcomments.html?UNT=" + getCookie("username") + "\" height=\"85%\" width=\"100%\" frameborder=\"0\"></iframe>";
+</script>                   
 </body>
 </html>
