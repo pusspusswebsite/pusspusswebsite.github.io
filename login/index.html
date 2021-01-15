@@ -5,6 +5,13 @@
 <script src="https://3EGaming.github.io/files/js/urlvar.js"></script>
 <script src="https://3EGaming.github.io/files/js/cookie.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+if (document.cookie.match(/^(.*;)?\s*username\s*=\s*[^;]+(.*)?$/))
+{
+    setCookie("username", "", -1);
+    window.location.replace("./../?logout");
+}
+</script>
 <style>
 .cookieconsent {
     position: fixed;
