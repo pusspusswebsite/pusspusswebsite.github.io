@@ -13,7 +13,7 @@ var LoginD = function()
     if (window.UNHCX == hashCode(document.getElementById("PWT").value))
     {
         console.log("Successfull Login.");
-        document.cookie = "username=" + window.UNT.value;
+        setCookie("username", window.UNT.value, 1);
         setTimeout(function(){window.location.replace("./../");},500);
     } else {
         console.log("Error");
