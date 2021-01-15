@@ -12,7 +12,7 @@
 <h3>please click a button above</h3>
 
 <div id="loginconfirm"></div>
-<script>if(document.cookie.match(/^(.*;)?\s*username\s*=\s*[^;]+(.*)?$/)) { document.getElementById("loginconfirm").innerHTML = "<H4>Successfully logged in!</H4>"; }</script>
+<script>if(document.cookie.match(/^(.*;)?\s*username\s*=\s*[^;]+(.*)?$/)) { document.getElementById("loginconfirm").innerHTML = "<H4>Successfully logged in!</H4>"; } else if (urlVariables["logout"] != undefined) { document.getElementById("loginconfirm").innerHTML = "<H4>Successfully logged out!</H4>"; }</script>
 
 <div id="ZAKPUSS"></div>
 <script src="./files/js/eastereggs.js"></script>
