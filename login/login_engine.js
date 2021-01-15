@@ -14,7 +14,7 @@ var LoginD = function()
     {
         console.log("Successfull Login.");
         document.cookie = "username=" + window.UNT.value;
-        window.location.replace("./../?SLI");
+        setTimeout(function(){window.location.replace("./../");},500);
     } else {
         console.log("Error");
         document.getElementById("PWHL").innerHTML = "<H3>Username or Password incorrect.</H3>";
