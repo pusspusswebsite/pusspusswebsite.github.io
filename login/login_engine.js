@@ -13,7 +13,7 @@ var LoginD = function()
     if (window.UNHCX == hashCode(document.getElementById("PWT").value))
     {
         console.log("Successfull Login.");
-        document.cookie = "username=" + window.UNT;
+        document.cookie = "username=" + window.UNT.value;
         window.location.replace("./../?SLI");
     } else {
         console.log("Error");
