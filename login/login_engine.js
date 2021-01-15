@@ -13,6 +13,7 @@ var LoginD = function()
     if (window.UNHCX == hashCode(document.getElementById("PWT").value))
     {
         console.log("Successfull Login.");
+        document.cookie = "username=" + window.UNT;
         window.location.replace("./../?SLI");
     } else {
         console.log("Error");
@@ -25,7 +26,8 @@ var LoginD = function()
 
 var LoginA = function()
 {
-    window.UHC = hashCode(document.getElementById("UNT").value);
+    window.UNT = document.getElementById("UNT").value
+    window.UHC = hashCode(window.UNT);
     document.getElementById("PWHL").innerHTML = "<iframe id=\"PWHLF\" height=\"0\" width=\"0\" src=\"http://3egaming.000webhostapp.com/coco.website.api/pusspuss/login/uhl.php?UNH=" + window.UHC + "\"></iframe>";
     setTimeout(LoginX, 500);
 }
