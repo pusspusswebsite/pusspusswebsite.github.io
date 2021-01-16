@@ -1,7 +1,7 @@
 if (EASTERCHECK(YEAR) == "0" + MONTH + "." + DATE) {
 document.getElementById("ZAKPUSS").innerHTML = "<P>Its easter!</P>";
 } else if (MONTH == 12 && DATE == 9) {
-document.getElementById("ZAK").innerHTML = "<P style="color:red;">THE CURSE IS HERE.</P>";
+document.getElementById("ZAK").innerHTML = "<P style=\"color:red;\">THE CURSE IS HERE.</P>";
 } else if (MONTH == 12 && DATE == 25) {
 document.getElementById("ZAKPUSS").innerHTML = "<P>Its christmas!</P>";
 } else if (MONTH == 12 && DATE < 24) {
@@ -18,5 +18,5 @@ document.getElementById("ZAK").innerHTML = "<P>Happy new year!</P><H1>" + YEAR +
 } else if (MONTH == 10 && DATE == 31) {
 document.getElementById("ZAK").innerHTML = "<P>Its Halloween.</P>";
 } else if (urlVariables["coco"] != undefined) {
-document.getElementById("ZAK").innerHTML = "<P style="color:red;">NO.</P>";
+document.getElementById("ZAK").innerHTML = "<P style=\"color:red;\">NO.</P>";
 }
