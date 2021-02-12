@@ -1,0 +1,5 @@
+<script>
+var modPopup = function() {
+    window.open("./popup.html", "ModWindow", "width=450,height=120");
+}
+</script>

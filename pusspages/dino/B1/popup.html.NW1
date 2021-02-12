@@ -1,0 +1,16 @@
+<HTML>
+<HEAD>
+<title>Loading...</title>
+<script>
+var main = function() {
+    console.log('Loading now');
+    alert('Pusspuss Dino activated!');
+    window.self.close();
+}
+setTimeout(main, 1000);
+</script>
+</HEAD>
+<BODY>
+<H1>Loading...</H1>
+</BODY>
+</HTML>

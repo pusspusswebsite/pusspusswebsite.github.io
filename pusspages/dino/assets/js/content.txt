@@ -1,0 +1,1 @@
+javascript:if(window.location.href=="chrome://dino"){document.getElementById("offline-resources-1x").src="https://pusspusswebsite.github.io/pusspages/dino/assets/img/dino1.png";document.getElementById("offline-resources-2x").src="https://pusspusswebsite.github.io/pusspages/dino/assets/img/dino2.png";}else{alert("Please go to chrome://dino to use.");}

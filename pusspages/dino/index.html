@@ -1,7 +1,20 @@
 <HTML>
 <HEAD>
 <title>Pusspuss Dino</title>
+<script src="./assets/js/copy.js"></script>
 </HEAD>
 <BODY>
+<div id="NotLoadedIdentifier"></div>
+<div id="chromecheck">
+<input type="hidden" value="Hello World" id="JSMOD">
+<button onClick="modPopup();">Launch ModLoader</button>
+<a>chrome://dino</a>
+</div>
+<script>
+var isChrome = !!window.chrome && (!!window.chrome.webstore || !!window.chrome.runtime);
+if (!isChrome) {
+    document.getElementById("chromecheck").innerHTML = "<H1>Sorry, you must use chrome to play.</H1>";
+}
+</script>
 </BODY>
 </HTML>
